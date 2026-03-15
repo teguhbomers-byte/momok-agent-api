@@ -1,5 +1,5 @@
 {
- "name":"momok-agent-1",
+ "name":"momok-agent-server",
  "version":"1.1.0",
  "protocolVersion":"2025-06-18",
  "description":"AI-powered Web3 analytics and arbitrage monitoring",
