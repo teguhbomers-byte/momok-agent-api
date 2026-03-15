@@ -1,24 +1,32 @@
-export default function handler(req, res) {
-
-const agentId = req.query.agent || "1"
-
-res.status(200).json({
-
-name: `MomokAgent ${agentId}`,
-
-description: "AI agent for blockchain analytics and arbitrage monitoring",
-
-url: `https://momok-agent-api.vercel.app/api/a2a?agent=${agentId}`,
-
-skills: [
-
-"analytical_skills/blockchain_analysis",
-"analytical_skills/defi_monitoring",
-"analytical_skills/arbitrage_detection",
-"coding_skills/smart_contract_analysis",
-"data_skills/market_analysis"
-
-]
-
-})
+{
+ "name":"MomokAgent 1",
+ "description":"AI agent for blockchain analytics and arbitrage monitoring",
+ "url":"https://momok-agent-api.vercel.app/api/a2a?agent=1",
+ "skills":[
+  {
+   "id":"blockchain-analysis",
+   "name":"Blockchain Analysis",
+   "description":"Analyze blockchain transaction patterns and activity"
+  },
+  {
+   "id":"defi-monitor",
+   "name":"DeFi Monitoring",
+   "description":"Monitor DeFi protocols and liquidity changes"
+  },
+  {
+   "id":"arbitrage-detection",
+   "name":"Arbitrage Detection",
+   "description":"Detect cross-exchange and cross-chain arbitrage opportunities"
+  },
+  {
+   "id":"smart-contract-analysis",
+   "name":"Smart Contract Analysis",
+   "description":"Analyze smart contract risks and behavior"
+  },
+  {
+   "id":"market-analysis",
+   "name":"Market Analysis",
+   "description":"Analyze crypto market trends and trading data"
+  }
+ ]
 }
